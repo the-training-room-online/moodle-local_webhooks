@@ -19,13 +19,17 @@
  *
  * @package   local_webhooks
  * @copyright 2017 "Valentin Popov" <info@valentineus.link>
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 2023 The Training Room Online {@link https://www.ttro.com}
+ * @license   https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ *
+ * @global $plugin
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_webhooks';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '3.0.5 (Build: 2020051600)';
-$plugin->requires = 2019052000;
-$plugin->version = 2020051600;
+$plugin->version = 2023060900;
+$plugin->release = "3.9.0 (Build: $plugin->version)";
+$plugin->requires  = 2020061500;        // Requires this Moodle version.
+$plugin->supported = [39, 39];
