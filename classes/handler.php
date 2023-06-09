@@ -76,7 +76,7 @@ class handler {
         if ((bool) $callback->enable && !empty($callback->events[$data['eventname']])) {
             $urlparse = parse_url($CFG->wwwroot);
 
-            $data['host'] = $urlparse['host'];
+            $data['host'] = $urlparse['host'] . $urlparse['path'];
             $data['token'] = $callback->token;
             $data['extra'] = $callback->other;
 
