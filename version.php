@@ -29,7 +29,7 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_webhooks';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->version = 2023060900;
+$plugin->version = 2023060901;
 $plugin->release = "3.9.0 (Build: $plugin->version)";
 $plugin->requires  = 2020061500;        // Requires this Moodle version.
 $plugin->supported = [39, 39];
